@@ -1,0 +1,19 @@
+.Instructions{
+    display: flex;
+    column-gap: 70px;
+    margin-top: 50px;
+}
+.contentinst{
+    margin-top: 100px;
+    margin-left: 120px;
+    color:  aliceblue;
+}
+.nav-btn{
+    display: flex;
+    column-gap: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.L{
+    border-radius: 10px;
+}

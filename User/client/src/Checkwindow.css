@@ -1,0 +1,64 @@
+.h1-tags{
+    display: flex;
+    column-gap: 100px;
+    margin-left: 550px;
+}
+.Checkwindow{
+    background-color: aliceblue;
+}
+.container-1{
+    display: flex;
+    column-gap: 10px;
+    margin-left: 120px;
+}
+.strt{
+    background-color: #50a1ff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 44px;
+    align-content: center;
+    padding: 5px;
+    margin-top: 10px;
+    width: 50vw;
+    margin-left: 300px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.Video{
+    width: 400px;
+    height: 200px;
+}
+.capimg{
+    background-color: #50a1ff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 44px;
+    align-content: center;
+    padding: 5px;
+    margin-top: 10px;
+    width: 15vw;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.h1-chk{
+    margin-left: 140px;
+}
+.disp{
+    display: flex;
+    column-gap: 200px;
+}
+.abc{
+    margin-left: 100px;
+}
+.vid{
+    border:2px;
+    border-style: solid;
+}

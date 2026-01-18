@@ -1,0 +1,73 @@
+import React from "react";
+import { useState } from "react";
+import './Signin.css'
+import { GoogleLogin } from "@react-oauth/google";
+export default function Signin(){
+  const LoginForm = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState(null);
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      try {
+        const response = await fetch('/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password }),
+        });
+  
+        const result = await response.json();
+  
+        if (result.error) {
+          setError(result.error);
+        } else {
+          // Login successful, redirect to protected page or display success message
+          console.log('Login successful!');
+        }
+      } catch (error) {
+        setError('Network error. Please try again.');
+      }
+  return(
+      <div className="Signin">
+      <h1 className="Greet">Welcome Back, User!</h1>
+      <p>Sign in with your email address</p>
+      <form onSubmit={handleSubmit}>
+          <label className="lbl">Email</label>
+          <br/>
+          <input type="text" placeholder="Enter your email address" className="email-input" required="true" id="username" value={username} onChange={(e) => setUsername(e.target.value)}></input>
+          <br/>
+          <br/>
+          <label className="lbl">Password</label>
+          <br/>
+          <input type="text" placeholder="Enter your password" className="password-input" required="true" id="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+          <br/>
+          <button type="submit" className="Submit-btn">Login</button>
+      </form>
+      <p className="f">forgot your password?</p>
+      <br/>
+      <a href="/Dashboard">
+          <a href="/signin/oauth">
+              <h4 className="h4-signup">
+              <span>
+              <GoogleLogin
+              onSuccess={credentialResponse => {
+                  console.log(credentialResponse);
+              }}
+              onError={() => {
+                  console.log('Login Failed');
+              }}
+              />
+              </span></h4>
+          </a>
+      </a>
+      
+      <a href="/signup">
+          <p className="p">New here? Create an account and join us today!</p>
+      </a>
+      </div>
+  )
+  }
+}
+}

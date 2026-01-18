@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --background-color: #f0f8ff;
+    --container-background: #e6f7ff;
+    --text-color: #333;
+    --label-font-weight: bold;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.uploadquestions {
+    background-color: var(--container-background);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.label {
+    margin: 10px 0;
+    font-weight: var(--label-font-weight);
+    display: block; /* Ensures labels are on their own line */
+}
+
+.textbox {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    height: 40px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.textbox:focus {
+    border: 2px solid var(--primary-hover);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+.options {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#optionbox {
+    height: 35px;
+    margin: 10px 0;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
