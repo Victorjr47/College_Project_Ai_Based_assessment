@@ -1,0 +1,19 @@
+.Compatibility{
+    display: flex;
+    column-gap: 100px;
+    color:  aliceblue;
+    margin-top: 50px;
+}
+.contentcomp{
+    margin-top: 200px;
+    margin-left: 150px;
+}
+.M{
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: black;
+}
+.L{
+    background-color: black;
+    cursor: pointer;
+}

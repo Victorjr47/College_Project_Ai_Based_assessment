@@ -1,0 +1,41 @@
+.Dash-image{
+    margin-top: 75px;
+    margin-left: 50px;
+}
+.Dashboard{
+    display: flex;
+    column-gap:50px;
+    color: aliceblue;
+}
+.Dash-content{
+    margin-top: 75px;
+}
+.Start-btn{
+    background-color: #50a1ff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 44px;
+    align-content: center;
+    padding: 5px;
+    margin-top: 10px;
+    width: 15vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Reports-btn{
+    background-color: #50a1ff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 44px;
+    align-content: center;
+    padding: 5px;
+    margin-top: 10px;
+    width: 15vw;
+    font-weight: bold;
+}
